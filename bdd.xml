@@ -3,4 +3,34 @@
         <name>Guess Number</name>
         <url>https://kezy-code.github.io/GuessNumber/</url>
     </website>
-<website><name>Monster Shooter</name><url>https://kezy-code.github.io/MonsterShooter/</url></website><website><name>Her Or Nothing</name><url>https://kezy-code.github.io/HerOrNothing/</url></website><website><name>Samourai Fighter</name><url>https://kezy-code.github.io/SamouraiFighter/</url></website></websites>
+<website><name>Monster Shooter</name><url>https://kezy-code.github.io/MonsterShooter/</url></website><website><name>Her Or Nothing</name><url>https://kezy-code.github.io/HerOrNothing/</url></website><website><name>Samourai Fighter</name><url>https://kezy-code.github.io/SamouraiFighter/</url></website><website><name>def Syracuse(u):
+    if u % 2 == 0:
+        return u // 2
+    else:
+        return 3 * u + 1
+    return u
+
+def Liste_Syracuse(u):
+    L = [u]
+    while u != 1:
+        L.append(Syracuse(u))
+        u = Syracuse(u)
+    print(L)
+    return L
+
+def tempsdevol(u):
+    temps = 0
+    while u != 1:
+        u= Syracuse(u)
+        temps = temps + 1
+    return temps
+
+def min_u0():
+    u0 = 1
+    while True:
+        temps = temp(u0)
+        if temps &gt;= 100:
+            print(f"La plus petite valeur de u0 est {u0} avec un temps de vol de {temps}") 
+            return u0, temps
+        u0 = u0 + 1
+min_u0()</name><url>ok</url></website></websites>
